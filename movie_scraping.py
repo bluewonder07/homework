@@ -19,4 +19,4 @@ for movie in movies:
         rank = movie.select_one("td:nth-child(1) > img")['alt']
         name = a_tag.text
         star = movie.select_one("td.point").text
-        print(name, star, rank)
+        print(rank, name, star)
